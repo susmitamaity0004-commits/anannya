@@ -1087,13 +1087,13 @@ function openCard3d(){
    SCENE 5 — SCRAPBOOK (7 memory pages with page turns)
    ============================================================ */
 const scrapData=[
-  {title:"Jab Pehli Baar Mile The 🥰",caption:"Woh pehli mulaqaat... aur sab badal gaya",img:"test photo/First meeting.jpg"},
-  {title:"Pehla Adventure Saath Mein 🌍",caption:"Humara pehla trip — kitna maza aaya tha!",img:"test photo/First adventure.jpg"},
-  {title:"Jab Dil Mein Baat Aayi... 💕",caption:"Uss din samajh aaya... tum special ho",img:"test photo/jab dil m baat aai.jpg"},
-  {title:"Sabse Funny Moment 😂",caption:"Haste haste pet dukh gaya tha yaad hai?",img:"test photo/funny moment.jpg"},
-  {title:"Woh Din Jo Kabhi Nahi Bhoolunga 🌟",caption:"Kuch din hote hain jo dil mein bas jaate hain",img:"test photo/woh din m kabhi nhi bhulunga.jpeg"},
-  {title:"Late Night Talks ☎️",caption:"2 baje tak baatein... aur phir bhi mann nahi bharta",img:"test photo/late night talk.jpg"},
-  {title:"Har Chhota Moment Special Hai 💫",caption:"Kyunki tumhare saath sab kuch khaas hai",img:"test photo/har moment special h.jpg"}
+  {title:"Jab Pehli Baar Mile The 🥰",caption:"Woh pehli mulaqaat... aur sab badal gaya",img:"photos/first-meeting.jpg"},
+  {title:"Pehla Adventure Saath Mein 🌍",caption:"Humara pehla trip — kitna maza aaya tha!",img:"photos/first-adventure.jpg"},
+  {title:"Jab Dil Mein Baat Aayi... 💕",caption:"Uss din samajh aaya... tum special ho",img:"photos/jab-dil-m-baat-aai.jpg"},
+  {title:"Sabse Funny Moment 😂",caption:"Haste haste pet dukh gaya tha yaad hai?",img:"photos/funny-moment.jpg"},
+  {title:"Woh Din Jo Kabhi Nahi Bhoolunga 🌟",caption:"Kuch din hote hain jo dil mein bas jaate hain",img:"photos/woh-din-m-kabhi-nhi-bhulunga.jpeg"},
+  {title:"Late Night Talks ☎️",caption:"2 baje tak baatein... aur phir bhi mann nahi bharta",img:"photos/late-night-talk.jpg"},
+  {title:"Har Chhota Moment Special Hai 💫",caption:"Kyunki tumhare saath sab kuch khaas hai",img:"photos/har-moment-special-h.jpg"}
 ];
 let scrapInit=false;
 function initScrapbook(){
@@ -1170,7 +1170,7 @@ function initPuzzle(){
     piece.className='puzzle-piece';
     piece.dataset.correct=correctIdx;
     const col=correctIdx%3,row=Math.floor(correctIdx/3);
-    piece.style.backgroundImage='url("test photo/puzzle photo.jpeg")';
+    piece.style.backgroundImage='url("photos/puzzle-photo.jpeg")';
     piece.style.backgroundSize='300% 300%';
     piece.style.backgroundPosition=`${col*50}% ${row*50}%`;
     piece.textContent='';
@@ -1379,7 +1379,7 @@ function triggerBoom(cx,cy){
    SCENE 8 — GALAXY (10 photos as planets + parallax)
    ============================================================ */
 const galaxyCaptions=["Humari pehli selfie 📸","Date night ❤️","Travel diaries ✈️","Meri favourite photo 😍","Festival vibes 🎊","Candid moment 📷","Adventure time 🏔️","Tumhare saath ☀️","Cafe date ☕","Sunset together 🌅"];
-const galaxyImages=["test photo/Galaxy 1.jpeg","test photo/Galaxy 2.jpeg","test photo/Galaxy 3.jpeg","test photo/Galaxy 4.jpeg","test photo/Galaxy 5.jpeg","test photo/Galaxy 6.jpeg","test photo/Galaxy 7.jpeg","test photo/Galaxy 8.jpg","test photo/Galaxy 9.jpg","test photo/Galaxy 10.jpg"];
+const galaxyImages=["photos/galaxy-1.jpeg","photos/galaxy-2.jpeg","photos/galaxy-3.jpeg","photos/galaxy-4.jpeg","photos/galaxy-5.jpeg","photos/galaxy-6.jpeg","photos/galaxy-7.jpeg","photos/galaxy-8.jpg","photos/galaxy-9.jpg","photos/galaxy-10.jpg"];
 let galaxyInit=false,galaxyViewed=0;
 function initGalaxy(){
   if(galaxyInit) return; galaxyInit=true;
@@ -1443,14 +1443,14 @@ function closeGalaxyZoom(){$('#galaxyZoom').classList.remove('show')}
    SCENE 9 — PHOTO WALL (8 draggable polaroids)
    ============================================================ */
 const polaroidData=[
-  {caption:"Us ❤️",img:"test photo/step 9 my love.jpg",top:'12%',left:'5%',rot:-6},
-  {caption:"Adventures 🌍",img:"test photo/step 9 adventure.jpg",top:'8%',left:'36%',rot:4},
-  {caption:"My Love 💕",img:"test photo/step 9 my jaan.jpg",top:'10%',left:'68%',rot:-3},
-  {caption:"Smiles 😊",img:"test photo/step 9 smile.jpeg",top:'42%',left:'6%',rot:5},
-  {caption:"Forever 💫",img:"test photo/step 9 forever.jpg",top:'40%',left:'40%',rot:-4},
-  {caption:"Best Days 🌟",img:"test photo/step 9 Best Day.jpeg",top:'44%',left:'70%',rot:7},
-  {caption:"My Jaan 🥰",img:"test photo/Smile.jpg",top:'70%',left:'16%',rot:-2},
-  {caption:"Together 👫",img:"test photo/step 9 Together.jpg",top:'68%',left:'55%',rot:3}
+  {caption:"Us ❤️",img:"photos/step-9-my-love.jpg",top:'12%',left:'5%',rot:-6},
+  {caption:"Adventures 🌍",img:"photos/step-9-adventure.jpg",top:'8%',left:'36%',rot:4},
+  {caption:"My Love 💕",img:"photos/step-9-my-jaan.jpg",top:'10%',left:'68%',rot:-3},
+  {caption:"Smiles 😊",img:"photos/step-9-smile.jpeg",top:'42%',left:'6%',rot:5},
+  {caption:"Forever 💫",img:"photos/step-9-forever.jpg",top:'40%',left:'40%',rot:-4},
+  {caption:"Best Days 🌟",img:"photos/step-9-best-day.jpeg",top:'44%',left:'70%',rot:7},
+  {caption:"My Jaan 🥰",img:"photos/smile.jpg",top:'70%',left:'16%',rot:-2},
+  {caption:"Together 👫",img:"photos/step-9-together.jpg",top:'68%',left:'55%',rot:3}
 ];
 let wallInit=false,wallInteractions=0;
 function initPhotoWall(){
@@ -1649,7 +1649,7 @@ function initFinale(){
 
   // Setup heart-shaped collage (6 photos)
   const collage=$('#finaleCollage');
-  const collageImages=["test photo/last step.jpeg","test photo/Last step 1.jpg","test photo/Last step 2.jpg","test photo/Last step 3.jpeg","test photo/Last step 4.jpeg","test photo/Last step 6.jpeg"];
+  const collageImages=["photos/last-step.jpeg","photos/last-step-1.jpg","photos/last-step-2.jpg","photos/last-step-3.jpeg","photos/last-step-4.jpeg","photos/last-step-6.jpeg"];
   for(let i=0;i<6;i++){
     const div=document.createElement('div');
     div.className='collage-photo';
